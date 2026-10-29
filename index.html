@@ -40,10 +40,9 @@
       font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     }
 
-    /* SMOOTH SCROLL WITH OFFSET TO PREVENT STICKY BAR OVERLAP */
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 70px; 
+      scroll-padding-top: 90px;
     }
 
     body {
@@ -57,13 +56,14 @@
       overflow-x: hidden;
     }
 
+    /* WIDER ZOOMED-IN CONTAINER WRAPPER */
     .app-wrapper {
       width: 100%;
-      max-width: 850px;
+      max-width: 1150px; 
       background-color: var(--card-bg);
       border-left: 1px solid var(--border-color);
       border-right: 1px solid var(--border-color);
-      box-shadow: 0 0 30px rgba(0,0,0,0.4);
+      box-shadow: 0 0 40px rgba(0,0,0,0.5);
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -71,8 +71,8 @@
 
     .header-box {
       background: linear-gradient(135deg, #091322, #111827);
-      border-bottom: 3px solid var(--accent);
-      padding: 16px 14px;
+      border-bottom: 4px solid var(--accent);
+      padding: 30px 20px;
       text-align: center;
     }
 
@@ -82,32 +82,32 @@
     }
 
     .profile-img {
-      width: 75px;
-      height: 75px;
+      width: 110px;
+      height: 110px;
       border-radius: 50%;
       background: url('me.jfif') center/cover;
-      border: 3px solid var(--accent);
-      margin: 0 auto 6px auto;
-      box-shadow: 0 0 12px var(--accent-glow);
+      border: 4px solid var(--accent);
+      margin: 0 auto 12px auto;
+      box-shadow: 0 0 16px var(--accent-glow);
     }
 
     .name-title {
-      font-size: 20px;
+      font-size: 28px;
       font-weight: 900;
       text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 2px;
+      letter-spacing: 1.5px;
+      margin-bottom: 6px;
     }
 
     .degree-sub {
-      font-size: 11.5px;
+      font-size: 15px;
       color: var(--accent);
       font-weight: 800;
-      margin-bottom: 2px;
+      margin-bottom: 4px;
     }
 
     .role-sub {
-      font-size: 10.5px;
+      font-size: 13px;
       color: var(--text-sub);
       font-weight: 600;
     }
@@ -117,32 +117,32 @@
       grid-template-columns: repeat(3, 1fr);
       background: rgba(56, 189, 248, 0.05);
       border-bottom: 1px solid var(--border-color);
-      padding: 6px 10px;
+      padding: 12px 15px;
       text-align: center;
     }
 
     .stat-item h4 {
-      font-size: 12.5px;
+      font-size: 16px;
       font-weight: 900;
       color: var(--accent);
     }
 
     .stat-item p {
-      font-size: 9px;
+      font-size: 11px;
       color: var(--text-sub);
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 1px;
       font-weight: 700;
     }
 
     .nav-bar {
       background-color: var(--card-bg);
       border-bottom: 1px solid var(--border-color);
-      padding: 8px 10px;
+      padding: 12px 15px;
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 5px;
+      gap: 8px;
       flex-wrap: wrap;
       position: sticky;
       top: 0;
@@ -154,9 +154,9 @@
       background: var(--tag-bg);
       color: var(--text-main);
       text-decoration: none;
-      padding: 6px 10px;
+      padding: 8px 14px;
       border-radius: 6px;
-      font-size: 10px;
+      font-size: 12px;
       font-weight: 800;
       border: 1px solid var(--border-color);
       cursor: pointer;
@@ -169,14 +169,14 @@
       background: var(--nav-highlight-bg);
       color: var(--nav-highlight-text);
       border-color: var(--accent);
-      box-shadow: 0 0 10px var(--accent-glow);
+      box-shadow: 0 0 12px var(--accent-glow);
     }
 
     .content-container {
-      padding: 10px;
+      padding: 20px;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
+      gap: 16px;
       align-items: start;
     }
 
@@ -187,9 +187,9 @@
     .section-card {
       background: var(--card-bg);
       border: 1px solid var(--border-color);
-      border-left: 3px solid var(--accent);
-      border-radius: 6px;
-      padding: 12px 14px;
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      padding: 18px 20px;
       height: fit-content;
       box-sizing: border-box;
     }
@@ -199,26 +199,26 @@
       align-items: center;
       background: var(--badge-bg);
       color: var(--accent);
-      font-size: 9px;
+      font-size: 11px;
       font-weight: 900;
-      letter-spacing: 0.5px;
-      padding: 2px 6px;
-      border-radius: 3px;
-      margin-bottom: 6px;
+      letter-spacing: 1px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-bottom: 10px;
       text-transform: uppercase;
       border: 1px solid var(--accent);
     }
 
     .section-heading {
-      font-size: 13.5px;
+      font-size: 17px;
       font-weight: 900;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       color: var(--text-main);
-      margin-bottom: 6px;
+      margin-bottom: 10px;
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: 6px;
     }
 
     .hero-flex {
@@ -226,20 +226,19 @@
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 12px;
     }
 
     .btn-group {
       display: flex;
-      gap: 6px;
+      gap: 10px;
       flex-wrap: wrap;
     }
 
-    /* ENHANCED CLICK TARGET SIZE */
     .btn {
-      padding: 8px 14px;
-      border-radius: 5px;
-      font-size: 10.5px;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-size: 12px;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 0.5px;
@@ -267,8 +266,8 @@
     }
 
     .text-body {
-      font-size: 11.5px;
-      line-height: 1.45;
+      font-size: 14px;
+      line-height: 1.5;
       color: var(--text-sub);
       word-wrap: break-word;
     }
@@ -276,15 +275,15 @@
     .skills-flex {
       display: flex;
       flex-wrap: wrap;
-      gap: 5px;
+      gap: 8px;
     }
 
     .skill-chip {
       background-color: var(--tag-bg);
       color: var(--accent);
-      padding: 4px 8px;
-      border-radius: 4px;
-      font-size: 10.5px;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 13px;
       font-weight: 800;
       border: 1px solid var(--border-color);
     }
@@ -292,187 +291,183 @@
     .hobby-list {
       display: flex;
       flex-direction: column;
-      gap: 5px;
+      gap: 8px;
     }
 
     .hobby-item {
       background: var(--tag-bg);
       border: 1px solid var(--border-color);
-      padding: 5px 8px;
-      border-radius: 4px;
-      font-size: 11px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 13.5px;
       color: var(--text-main);
       font-weight: 700;
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
     }
 
     .timeline-box {
-      border-left: 2px solid var(--accent);
-      padding-left: 8px;
-      margin-bottom: 6px;
+      border-left: 3px solid var(--accent);
+      padding-left: 12px;
+      margin-bottom: 10px;
     }
 
     .timeline-title {
-      font-size: 12px;
+      font-size: 14.5px;
       font-weight: 800;
       color: var(--text-main);
     }
 
     .timeline-date {
-      font-size: 10px;
+      font-size: 12px;
       color: var(--accent);
       font-weight: 800;
-      margin-bottom: 2px;
+      margin-bottom: 4px;
     }
 
     .bullets {
       list-style-type: disc;
-      padding-left: 14px;
-      font-size: 11px;
+      padding-left: 18px;
+      font-size: 13.5px;
       line-height: 1.4;
       color: var(--text-sub);
     }
 
-    /* VISUAL PROOF CARDS GRID */
     .proof-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 10px;
-      margin-top: 8px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 15px;
+      margin-top: 12px;
     }
 
     .proof-card {
       background: rgba(56, 189, 248, 0.03);
       border: 1px solid var(--border-color);
-      border-radius: 6px;
+      border-radius: 8px;
       overflow: hidden;
       cursor: pointer;
       transition: transform 0.2s ease, border-color 0.2s ease;
     }
 
     .proof-card:hover {
-      transform: translateY(-2px);
+      transform: translateY(-3px);
       border-color: var(--accent);
     }
 
     .proof-thumb {
       width: 100%;
-      height: 110px;
+      height: 140px;
       background-size: cover;
       background-position: center;
       border-bottom: 1px solid var(--border-color);
     }
 
     .proof-content {
-      padding: 8px 10px;
+      padding: 12px 14px;
     }
 
     .proof-title {
-      font-size: 11.5px;
+      font-size: 14px;
       font-weight: 900;
       color: var(--accent);
-      margin-bottom: 2px;
+      margin-bottom: 4px;
       text-transform: uppercase;
     }
 
     .proof-desc {
-      font-size: 10px;
+      font-size: 12px;
       color: var(--text-sub);
-      line-height: 1.3;
+      line-height: 1.4;
     }
 
-    /* PREVIEW MODAL */
     .modal-overlay {
       display: none;
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, 0.8);
-      backdrop-filter: blur(5px);
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(6px);
       z-index: 2000;
       justify-content: center;
       align-items: center;
-      padding: 15px;
+      padding: 20px;
     }
 
     .modal-card {
       background: var(--card-bg);
       border: 2px solid var(--accent);
-      border-radius: 8px;
-      max-width: 480px;
+      border-radius: 10px;
+      max-width: 580px;
       width: 100%;
       overflow: hidden;
-      box-shadow: 0 0 25px var(--accent-glow);
+      box-shadow: 0 0 35px var(--accent-glow);
       position: relative;
     }
 
     .modal-img {
       width: 100%;
-      height: 200px;
+      height: 260px;
       background-size: cover;
       background-position: center;
       border-bottom: 1px solid var(--border-color);
     }
 
     .modal-body {
-      padding: 15px;
+      padding: 20px;
     }
 
     .modal-close {
       position: absolute;
-      top: 10px;
-      right: 10px;
+      top: 12px;
+      right: 12px;
       background: rgba(0,0,0,0.7);
       border: 1px solid var(--accent);
       color: #fff;
-      width: 26px;
-      height: 26px;
+      width: 32px;
+      height: 32px;
       border-radius: 50%;
       cursor: pointer;
       font-weight: bold;
       display: flex;
       align-items: center;
       justify-content: center;
+      font-size: 16px;
     }
 
     .contact-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 6px;
-      margin-bottom: 8px;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+      margin-bottom: 14px;
     }
 
     .contact-card {
       background: var(--tag-bg);
       border: 1px solid var(--border-color);
-      padding: 6px 10px;
-      border-radius: 4px;
+      padding: 10px 14px;
+      border-radius: 6px;
     }
 
     .contact-card h5 {
-      font-size: 9px;
+      font-size: 11px;
       color: var(--accent);
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      margin-bottom: 1px;
+      margin-bottom: 3px;
     }
 
     .contact-card p {
-      font-size: 11px;
+      font-size: 13px;
       font-weight: 700;
       color: var(--text-main);
       word-break: break-all;
     }
 
-    @media (max-width: 650px) {
+    @media (max-width: 750px) {
       .content-container {
         grid-template-columns: 1fr;
-        padding: 8px;
-        gap: 8px;
-      }
-      .section-card {
-        padding: 10px;
+        padding: 12px;
+        gap: 12px;
       }
     }
   </style>
@@ -542,13 +537,15 @@
 
       <section id="skills" class="section-card">
         <div class="section-identifier">03 | TECHNICAL SKILLS</div>
-        <h2 class="section-heading">💻 SKILLS & TECH STACK</h2>
+        <h2 class="section-heading">💻 LANGUAGES & TECH STACK</h2>
         <div class="skills-flex">
-          <div class="skill-chip">Web Application Dev</div>
+          <div class="skill-chip">Java</div>
+          <div class="skill-chip">JavaScript</div>
+          <div class="skill-chip">CSS / CSS3</div>
+          <div class="skill-chip">C++</div>
+          <div class="skill-chip">HTML / HTML5</div>
+          <div class="skill-chip">Python</div>
           <div class="skill-chip">UI/UX & Web Design</div>
-          <div class="skill-chip">HTML5 / CSS3 / JS</div>
-          <div class="skill-chip">Python & C++</div>
-          <div class="skill-chip">Adobe Premiere & Photoshop</div>
           <div class="skill-chip">Canva & Photopea</div>
         </div>
       </section>
@@ -570,7 +567,7 @@
           <div class="timeline-title">Bachelor of Science in Information Systems</div>
           <div class="timeline-date">Dr. Filemon C. Aguilar Memorial College of Las Piñas</div>
         </div>
-        <div class="timeline-box" style="margin-top: 6px;">
+        <div class="timeline-box" style="margin-top: 10px;">
           <div class="timeline-title">TVL-ICT Strand</div>
           <div class="timeline-date">Holy Rosary Academy Of Las Piñas City</div>
         </div>
@@ -579,7 +576,7 @@
       <section id="training" class="section-card full-width">
         <div class="section-identifier">06 | PROOF OF WORK</div>
         <h2 class="section-heading">📜 FEATURED PROJECTS & OUTPUTS</h2>
-        <p class="text-body" style="margin-bottom: 8px;">Click any card below to preview the work output directly:</p>
+        <p class="text-body" style="margin-bottom: 12px;">Click any card below to preview the work output directly:</p>
         
         <div class="proof-grid">
           <div class="proof-card" onclick="openModal('MISSPIC Web App', 'Developed and deployed an interactive web application featuring custom password security, quiz mechanics, and embedded audio controls using HTML5, CSS3, and JavaScript.', 'miss.jfif')">
@@ -641,8 +638,8 @@
       <button class="modal-close" onclick="closeModal()">&times;</button>
       <div id="modalImg" class="modal-img"></div>
       <div class="modal-body">
-        <h3 id="modalTitle" style="font-size: 15px; font-weight: 900; color: var(--accent); margin-bottom: 6px;">Title</h3>
-        <p id="modalDesc" class="text-body">Description...</p>
+        <h3 id="modalTitle" style="font-size: 18px; font-weight: 900; color: var(--accent); margin-bottom: 8px;">Title</h3>
+        <p id="modalDesc" class="text-body" style="font-size: 13px;">Description...</p>
       </div>
     </div>
   </div>
@@ -672,7 +669,7 @@
     }
 
     window.addEventListener('scroll', () => {
-      const scrollPos = window.scrollY + 100;
+      const scrollPos = window.scrollY + 120;
       document.querySelectorAll('.section-card').forEach(section => {
         const top = section.offsetTop;
         const height = section.offsetHeight;
